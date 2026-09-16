@@ -1,0 +1,142 @@
+/* 기본 초기화 및 공통 설정 */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body {
+    scroll-behavior: smooth;
+    font-family: '맑은 고딕', sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+li { list-style: none; }
+a { text-decoration: none; color: inherit; }
+button { cursor: pointer; }
+
+/* 공통 레이아웃 (헤더 넓이 확장 반영) */
+.inner_wrap {
+    width: 80%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.section_title {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+.placeholder_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 45px;
+    font-weight: bold;
+    
+}
+.skill_list>li:nth-of-type(1){background-color: #4246fb;}
+.skill_list>li:nth-of-type(2){background-color: #fa8a1c;}
+.placeholder_img>img:nth-of-type(1){width: 100%;}
+.placeholder_img>img:nth-of-type(2){width: 100%;}
+.icon_box {
+    border-radius: 50%;
+}
+.icon_box>img{width: 100%;}
+
+/* 공통 Header */
+.header {
+    width: 100%;
+    height: 700px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+}
+.header .inner_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header_img {
+    width: 40%;
+    height: 80%;
+}
+.header_img>img{
+    width: 100%;
+}
+.header_text {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+    color: #3d9973;
+}
+.header_text h2 {
+    font-size: 60px;
+    line-height: 1.2;
+}
+.menu { display: flex; gap: 20px; }
+.menu li a {
+    display: block;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #d6f1e6;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+.menu li a:hover { background-color: #333; color: #fff; }
+
+/* 공통 Footer (Contact) */
+.contact {
+    width: 100%;
+    padding: 100px 0;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+.contact h2 { font-size: 40px; margin-bottom: 20px; }
+.contact_list {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 50px;
+}
+.contact_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.contact_item .icon_box { width: 100px; height: 100px; }
+
+/* type_b.css */
+.split_section {
+    display: flex;
+    width: 100%;
+    min-height: 800px;
+    border-bottom: 1px solid #ddd;
+}
+.left_panel {
+    width: 35%;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0;
+}
+.profile_img { width: 300px; height: 350px; margin-bottom: 30px; }
+.profile_img>img{width: 100%;}
+.left_panel h3 { font-size: 30px; margin-bottom: 10px; }
+.social_icons { display: flex; gap: 15px; margin-top: 20px; }
+.social_icons .icon_box { width: 50px; height: 50px; }
+
+.right_panel {
+    width: 65%;
+    padding: 100px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+.about_box h2, .skill_box h2 { font-size: 35px; margin-bottom: 30px; }
+.about_box p { font-size: 18px; line-height: 1.8; }
+.skill_list { display: flex; gap: 20px; }
+.skill_list li { width: 150px; height: 180px; border-radius: 20px; }
+
+.portfolio { padding: 150px 0; }
+.portfolio_list { display: flex; justify-content: center; gap: 50px; }
+.portfolio_list article { width: 45%; text-align: center; }
+.portfolio_img { width: 100%; height: 400px; margin-bottom: 20px; }
