@@ -1,2 +1,0 @@
-# kjmj_page
-gg
